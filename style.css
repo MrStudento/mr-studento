@@ -1,0 +1,68 @@
+body
+{
+    background: rgb(255,255,0);
+    background: linear-gradient(90deg, rgba(255,255,0,1) 0%, rgba(249,217,7,1) 5%, rgba(246,198,10,1) 8%, rgba(244,186,12,1) 10%, rgba(242,173,14,1) 13%, rgba(241,167,15,1) 14%, rgba(239,154,17,1) 16%, rgba(237,143,19,1) 23%, rgba(236,138,20,1) 26%, rgba(234,126,22,1) 30%, rgba(234,126,22,1) 35%, rgba(233,120,23,1) 38%, rgba(230,98,27,1) 44%, rgba(230,98,27,1) 47%, rgba(230,98,27,1) 48%, rgba(222,95,28,1) 57%, rgba(228,124,23,1) 67%, rgba(230,132,21,1) 73%, rgba(232,137,19,1) 75%, rgba(233,150,18,1) 78%, rgba(235,162,16,1) 80%, rgba(236,166,15,1) 82%, rgba(237,172,14,1) 87%, rgba(240,185,12,1) 90%, rgba(242,195,10,1) 92%, rgba(245,208,8,1) 94%, rgba(245,208,8,1) 97%, rgba(250,232,4,1) 99%, rgba(254,255,0,1) 100%);
+    margin: 0;
+}
+.container
+{
+    max-width: 400px;
+    margin: 0 auto;
+}
+.container img
+{
+    height: 300px;
+    border-radius: 50%;
+    margin-top: 200px;
+    margin-left: 50px;
+}
+.about
+{
+    max-width: 1220px;
+    margin: 0 auto;
+    font-size: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.about a
+{
+    text-decoration: none;
+
+}
+.contact1
+{
+    max-width: 1000px;
+    margin: 0 auto;
+    left: 500px;
+    
+}
+.contact1 li
+{
+    padding-top: 20px;
+    list-style: none;
+    font-size: 25px;
+}
+.contact2
+{
+    max-width: 500px;
+    margin: 0 auto;
+    
+    margin-top: -200px;
+    padding-left: 800px;
+    
+}
+.contact2 li
+{
+    padding-top: 20px;
+    list-style: none;
+    font-size: 25px;
+}
+.contact1 li a
+{
+    text-decoration: none;
+    color: rgba(31, 71, 247, 0.986);
+}
+.contact2 li a
+{
+    text-decoration: none;
+    color: rgba(31, 71, 247, 0.986);
+}

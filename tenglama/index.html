@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tenglama</title>
+    <style>
+        body
+        {
+            background-color: rgb(136, 192, 241);
+        }
+    </style>
+    <h2>
+    <script>
+        function calc()
+        {
+            var a =parseFloat(document.getElementById('a').value);
+            var b =parseFloat(document.getElementById('b').value);
+            var c =parseFloat(document.getElementById('c').value);
+
+            let Diskreminant = b * b - 4 * a * c;
+            if (Diskreminant > 0)
+            {
+               root1 = (-b + Math.sqrt(Diskreminant)) / (2 * a);
+               root2 = (-b - Math.sqrt(Diskreminant)) / (2 * a);
+               //result
+
+               document.write("birinchi ildiz: " + root1 , "  ikkinchi ildiz: "+ root2);
+            }
+            else if (Diskreminant == 0)
+            {
+                root1 = root2 = -b / (2 * a);
+
+                //natija
+                document.write("birinchi ildiz: "+root1 , "ikkinchi ildiz: "+root2);
+            }
+
+            else
+            {
+                document.write("Tenglama eychimga ega emas");
+            }
+        }
+    </script>
+    </h2>
+</head>
+<body>
+        <h2><p>ax<sup>2</sup> + bx + c = 0</p></h2> <h4>Shablon bo`yicha kiriting</h4>
+        <h2>
+        <input type="text" id="a" style="width: 30px;"/>x<sup>2</sup> + 
+        <input type="text" id="b" style="width: 30px;"/>x +
+        <input type="text" id="c" style="width: 30px;"/> = 0
+        <button onclick="calc();">Javobni ko`rish</button>
+
+    </h2>
+
+
+
+</body>
+</html>

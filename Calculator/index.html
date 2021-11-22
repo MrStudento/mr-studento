@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Calculator</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+
+        function calc()
+        {
+            var son1 = parseFloat(document.getElementById('son1').value);
+            var son2 = parseFloat(document.getElementById('son2').value);
+            var oper = document.getElementById('operators').value;
+
+            if(oper === '+')
+            {
+                document.getElementById('natija').value = son1 + son2;
+            }
+            if(oper === '-')
+            {
+                document.getElementById('natija').value = son1 - son2;
+            }
+            if(oper === '*')
+            {
+                document.getElementById('natija').value = son1 * son2;
+            }
+            if(oper === '/')
+            {
+                document.getElementById('natija').value = son1 / son2;
+            }
+
+        }
+
+    </script>
+    
+</head>
+<body>
+
+    <input type="text" id="son1"/><br/><br/>
+    <input type="text" id="son2"/><br/><br/>
+
+    <select id="operators">
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">x</option>
+        <option value="/">:</option>
+    </select>
+
+    <input type="text" id="natija"/>
+    <button onclick="calc();">=</button>
+    
+</body>
+</html>
